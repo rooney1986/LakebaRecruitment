@@ -1,0 +1,12 @@
+E:\Work\Recruitment\Recruitment\Recruitment.Data\bin\Debug\Recruitment.Data.dll.config
+E:\Work\Recruitment\Recruitment\Recruitment.Data\bin\Debug\Recruitment.Data.dll
+E:\Work\Recruitment\Recruitment\Recruitment.Data\bin\Debug\Recruitment.Data.pdb
+E:\Work\Recruitment\Recruitment\Recruitment.Data\bin\Debug\EntityFramework.dll
+E:\Work\Recruitment\Recruitment\Recruitment.Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Work\Recruitment\Recruitment\Recruitment.Data\bin\Debug\MySql.Data.dll
+E:\Work\Recruitment\Recruitment\Recruitment.Data\bin\Debug\MySql.Data.Entity.EF6.dll
+E:\Work\Recruitment\Recruitment\Recruitment.Data\bin\Debug\EntityFramework.xml
+E:\Work\Recruitment\Recruitment\Recruitment.Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Work\Recruitment\Recruitment\Recruitment.Data\obj\Debug\Recruitment.Data.dll
+E:\Work\Recruitment\Recruitment\Recruitment.Data\obj\Debug\Recruitment.Data.pdb
+E:\Work\Recruitment\Recruitment\Recruitment.Data\obj\Debug\Recruitment.Data.csprojResolveAssemblyReference.cache

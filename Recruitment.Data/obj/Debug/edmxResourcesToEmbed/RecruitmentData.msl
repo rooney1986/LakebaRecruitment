@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="recruitmentModelStoreContainer" CdmEntityContainer="recruitmentEntities">
+    <EntitySetMapping Name="candidates">
+      <EntityTypeMapping TypeName="recruitmentModel.candidate">
+        <MappingFragment StoreEntitySet="candidate">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="sur_name" ColumnName="sur_name" />
+          <ScalarProperty Name="position" ColumnName="position" />
+          <ScalarProperty Name="curriculum" ColumnName="curriculum" />
+          <ScalarProperty Name="created_date" ColumnName="created_date" />
+          <ScalarProperty Name="lastupdated_date" ColumnName="lastupdated_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

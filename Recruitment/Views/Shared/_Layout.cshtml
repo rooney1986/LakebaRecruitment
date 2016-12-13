@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakeba Recruitment</title>
+    
+    <!--basic styles-->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/bootstrap-responsive.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" />
+
+    <!--fonts-->
+    <link rel="stylesheet" href="/assets/css/css.css" />
+
+    <!--ace styles-->
+    <link rel="stylesheet" href="/assets/css/ace.min.css" />
+    <link rel="stylesheet" href="/assets/css/ace-responsive.min.css" />
+    <link rel="stylesheet" href="/assets/css/ace-skins.min.css" />
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="https://ingress-api.quixxi.com/CDN/quixxianalytics.min.js"></script>
+
+    <script>
+        Quixxi.init("a7524f4e-33b2-4072-b2ec-02ce70affdc7", "FqeWO9Qa9cOMLzbB0ins", false)
+    </script>
+</head>
+<body>
+
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a href="/" class="brand">
+                    <small>
+                        <i class="icon-leaf"></i>
+                        Lakeba Recruitment
+                    </small>
+                </a><!--/.brand-->
+            </div><!--/.container-fluid-->
+        </div><!--/.navbar-inner-->
+    </div>
+
+    <div class="container-fluid" ng-app="recruitmentModule" id="main-container">
+        <div id="main-content" class="clearfix">
+            <div ng-controller="recruitmentCtrl" id="page-content" class="clearfix">
+                @RenderBody()
+            </div>
+            <hr />
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>    
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <!--page specific plugin scripts-->
+    <script src="/assets/js/jquery.dataTables.min.js"></script>
+    <script src="/assets/js/jquery.dataTables.bootstrap.js"></script>
+    <!--ace scripts-->
+    <script src="/assets/js/ace-elements.min.js"></script>
+    <script src="/assets/js/ace.min.js"></script>
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/AngularCustom.js"></script>
+</body>
+</html>

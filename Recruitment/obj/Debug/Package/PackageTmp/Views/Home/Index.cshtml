@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Candidate List</h2>
+
+<table ng-cloak>
+    <thead>
+        <tr>
+            <th style="display: none;">ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Position</th>
+            <th>Curriculum</th>
+            <th>Action Requested</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="items in candidateData">
+            <td hidden="hidden">{{items.id}}</td>
+            <td>{{items.name}}</td>
+            <td>{{items.sur_name}}</td>
+            <td>{{items.position}}</td>
+            <td><a href="/Assets/Uploads/{{items.curriculum}}" target="_blank">View</a></td>
+            <td>
+                <button ng-model="$scope.Candidate" ng-click="edit(candidateData[$index])">Edit</button>
+                <button ng-click="delete($index)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br />
+<div style="border-top: solid 2px #282828; width: 430px; height: 10px"> </div>
+
+<button data-ng-click="add()">Add New Candidate</button>
+
+@*<div ng-show="Candidate.id != '' ">
+    <div>
+        <h2>Candidate Form</h2>
+    </div>
+    <div hidden="hidden">
+        <label for="id">Id</label>
+        <input type="text" data-ng-model="Candidate.id" />
+    </div>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" data-ng-model="Candidate.name" />
+    </div>
+    <div>
+        <label for="sur_name">Surname</label>
+        <input type="text" data-ng-model="Candidate.sur_name" />
+    </div>
+
+    <div>
+        <label for="position">Position</label>
+        <select data-ng-model="Candidate.position">
+            <option value="">None</option>
+            <option value="Tech Lead">Tech Lead</option>
+            <option value="Front End Programmer">Front End Programmer</option>
+            <option value="Back End Progammer">Back End Programmer</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="curriculum">Curriculum</label>
+        <input type="file" file-upload multiple />
+    </div>
+    <br />
+    <div>
+        <button data-ng-click="update()">Save</button>
+    </div>
+</div>*@
+
+<div ng-show="Candidate != null">
+    <div>
+        <h2>Candidate Form</h2>
+    </div>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" data-ng-model="Candidate.name" /> @*Only allow alphabet and blank space*@
+    </div>
+    <div>
+        <label for="sur_name">Surname</label>
+        <input type="text" data-ng-model="Candidate.sur_name" />@*Only allow alphabet and blank space*@
+    </div>
+
+    <div>
+        <label for="position">Position</label>
+        <select data-ng-model="Candidate.position">
+            <option value="">None</option>
+            <option value="Tech Lead">Tech Lead</option>
+            <option value="Front End Programmer">Front End Programmer</option>
+            <option value="Back End Progammer">Back End Programmer</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="curriculum">Curriculum</label>
+        <a ng-show="Candidate.curriculum != ''" href="/Assets/Uploads/{{Candidate.curriculum}}" target="_blank">View</a>
+        <input type="file" file-upload multiple />
+    </div>
+    <br />
+    <div>
+        <button data-ng-click="clear()">Cancel</button>
+        <button data-ng-click="save()" ng-show="Candidate.id == 0">Save</button>
+        <button data-ng-click="update()" ng-show="Candidate.id > 0">Update</button>
+    </div>
+</div>
+
